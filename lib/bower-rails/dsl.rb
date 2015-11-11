@@ -172,9 +172,6 @@ module BowerRails
     end
 
     def assert_asset_path(path)
-      unless path.start_with?('assets', '/assets')
-        raise ArgumentError, "Assets should be stored in /assets directory, try assets_path 'assets/#{path}' instead"
-      end
     end
 
     def assert_group_name name
